@@ -14,9 +14,9 @@ from sklearn.metrics import (
     roc_auc_score,
 )
 
-st.set_page_config(page_title="Classification Model Evaluator", layout="wide")
-st.title("Classification Model Evaluator")
-st.write("Upload a labeled test CSV to evaluate a trained classification model.")
+st.set_page_config(page_title="Classification Models Evaluator", layout="wide")
+st.title("Classification Models Evaluator")
+st.write("Upload CSV file to evaluate a trained classification model.")
 
 bundle_path = Path(__file__).with_name("model_bundle.joblib")
 
