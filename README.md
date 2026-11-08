@@ -1,12 +1,12 @@
 
 # Problem Statement:  Predict whether a client will subscribe to a bank term deposit
 
-# Dataset description: 
+## Dataset Description
 
-•	This is a Bank Term Deposit Subscription Prediction Dataset.
-•	This dataset contains information about clients of a Portuguese banking institution. The goal is to predict whether a client will subscribe to a bank term deposit (variable y). The data was obtained from a direct marketing campaign, and each entry corresponds to a single client.
-•	The dataset contains 45,211 entries with 17 attributes. The attributes represent client information and campaign details, and they include both categorical and numerical data.
-•	y: The target variable, whether the client subscribed to a term deposit (binary: "yes", "no" y/n)
+- This is a Bank Term Deposit Subscription Prediction dataset.
+- This dataset contains information about clients of a Portuguese banking institution. The goal is to predict whether a client will subscribe to a bank term deposit (`y` variable). The data was obtained from a direct marketing campaign, and each entry corresponds to a single client.
+- The dataset contains **45,211 entries** with **17 attributes**. The attributes represent client information and campaign details and include both categorical and numerical data.
+- **Target Variable (`y`)**: Indicates whether the client subscribed to a term deposit (binary: `"yes/y"` or `"no/n"`).
 
 GITHUB repo link
 
@@ -32,7 +32,7 @@ Achieved the best overall balance, recording the highest AUC Score (0.905574), F
 Logistic regression handles the linear boundaries of the scaled continuous and encoded categorical features extremely well, making it the most reliable and robust model among the choices for this dataset. 
 
 
-##Decision Tree	: 
+## Decision Tree	: 
 Showed moderate accuracy (87.45%) with a relatively lower AUC Score (0.7014). However, it achieved a better balance between precision and recall
 Prone to overfitting on complex tabular categorical unless properly tuned, but useful when a higher capture rate (recall) of positive classes is desired at the cost of precision
 
@@ -45,3 +45,7 @@ Recorded the lowest accuracy (85.48%) and precision (0.4059), though it achieved
 ## SVM	:  
 Secured the highest Accuracy (90.04%) and Precision (0.6875), closely rivalling Logistic Regression on AUC (0.9048). Its recall was lower at 0.3431.
 SVM excels at finding optimal hyperplanes to separate the classes cleanly (yielding high precision), though it is computationally expensive and slightly conservative on predicting the minority positive class.
+
+### Best Performing Model
+
+Based on the evaluation metrics, **SVM** achieved the highest Accuracy (**90.49%**), Precision (**68.75%**), and MCC (**0.442**), making it the best overall model for this Bank Term Deposit Subscription Prediction task.
