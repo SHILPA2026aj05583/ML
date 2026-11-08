@@ -4,3 +4,4 @@ NumPy
 pandas 
 matplotlib 
 seaborn
+joblib
